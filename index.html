@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The snake</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div id="game">
+            <canvas id="canvas" width="450" height="450"></canvas>
+            <div class="prompt active"></div>
+        </div>
+        <section id="info">
+            <div id="instruction">
+                <h2>How to play The Snake?</h2>
+                <p>Use arrow keys on your keyboar to change direction of the snake.</p>
+                <p><span id="green">Green</span> boxes are the snake's food, when snake eats he is becoming longer.</p>
+                <p>Every portion of eated food increase your score.</p>
+                <p>Avoid hitting the border of the field, once u do that the game is over!</p>
+                <p>Longer the snake is, faster it moves.</p>
+                <p>Hit the space button to start the game! Good luck.</p>
+            </div>
+            <div id="statistics">
+                <h2>Statistics:</h2>
+                <p><stron>Best score:</stron> <span id="best"></span></p>
+                <p>Last game: <span id="last"></span></p>
+                <p>Current game: <span id="current"></span></p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>The snake game v1.0</p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
